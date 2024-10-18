@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" type="text/css" href="Agendamento.css">
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Agendamento</h1>
+        <p id="subtitulo">Marque um horário com o profissional que deseja</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text " name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email"required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Sexo</strong></label>
+            <label>
+                <input type="radio" name="sexo" value="Feminino">Feminino
+                <input type="radio" name="sexo" value="Masculino">Masculino
+            </label>
+        </div>
+        <div class="campo">
+            <label for="profissional"><strong>profissional</strong></label>
+            <select id="profissional">
+                <option selected disabled value="">Selecione</option>
+                <option>Cabeleireira</option>
+                <option>Manicuri</option>
+                <option>Maquiadora</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div id="check" >
+                <label><strong>Selecione dias da semana disponíveis para a profissional marcar um horario disponivel na agenda:</strong></label>
+                <br><br>
+                <input type="checkbox" id="dia1" value="Terça-Feira">
+                <label for="dia1">Terça-Feira</label> 
+                <input type="checkbox" id="dia2" value="Quarta-Feira">
+                <label for="dia2">Quarta-Feira</label>
+                <input type="checkbox" id="dia3" value="Quinta-Feira">
+                <label for="dia3">Quinta-Feira</label> 
+                <input type="checkbox" id="dia4" value="Sexta-Feira">
+                <label for="dia4">Sexta-Feira</label> 
+                <input type="checkbox" id="dia5" value="Sábado">
+                <label for="dia5">Sábado</label>  
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Conte o que deseja fazer:</strong></label>
+            <textarea rows="6" style="width: 26em;" name="desejo" id="desejo"></textarea>
+        </div>
+        <button type="submit" class="botao">Agendar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.logo{
+    width: 110px;
+    height: auto; 
+    margin-right: 20px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+ }
+ .menu{
+ background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+ overflow: hidden;
+ padding: 10px 0; /* Espaçamento vertical */
+ text-align: center;
+ box-shadow: 0px 4px 2px -2px gray; /* Sombra opcional para efeito */
+ display: flex; /* Alinhamento horizontal */
+ align-items: center; /* Centraliza os itens verticalmente */
+ justify-content: center; /* Alinha os itens horizontalmente */
+ }
+ .menu a,.menu .active{
+ display: inline-block;
+ color: #333; /* Cor do texto */
+ text-align: center;
+ padding: 14px 20px; /* Espaçamento ao redor do texto */
+ text-decoration: none; /* Remove sublinhado */
+ font-size: 16px;
+ }
+ .menu .active{
+ background-color: #d484ac; /* Cor de fundo para o item ativo */
+ color: white; /* Cor do texto do item ativo */
+ cursor: default; /* Remove o efeito de clique */
+ }
+ .menu a:hover{
+     background-color: #ddd; /* Cor de fundo ao passar o mouse */
+     color: #d484ac; /* Cor do texto ao passar o mouse */
+ } 
+ .conteiner{
+     display: flex; /* Usa flexbox para alinhar elementos lado a lado */
+     height: 100vh;
+ }
+ .FotoLateral{
+     flex: 1;
+     background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+     background-position: center; /* Centraliza a imagem */
+ }
+
+   .conteudo{
+    flex: 1; /* A outra metade ocupará 50% da largura */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+   
+}
